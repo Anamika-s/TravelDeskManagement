@@ -12,10 +12,10 @@ namespace TravelDeskManagementSystem
             Console.WriteLine("ENter LastNAme");
             string lastName = Console.ReadLine();
             
-            Console.WriteLine("ENter Role");
-            int role= Byte.Parse(Console.ReadLine());
+            Console.WriteLine("ENter Role ");
+            string  rolename= Console.ReadLine();
             //int role1 = class1.GetRole();
-            Role role2 = class1.GetRole();
+            Role role2 = class1.GetRole(rolename);
             
             User user = new User()
             {

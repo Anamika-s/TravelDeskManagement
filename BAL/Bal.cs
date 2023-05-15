@@ -12,9 +12,9 @@ namespace BAL
             return 0;
         }
 
-        public Role GetRole()
+        public Role GetRole(string rolename)
         {
-            return dal.GetRole();
+            return dal.GetRole(rolename);
         }
     }
 }

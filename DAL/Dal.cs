@@ -49,9 +49,9 @@ namespace DAL
             return 0;
 
         }
-        public Role GetRole()
+        public Role GetRole(string rolename)
         {
-            return(db.Roles.FirstOrDefault(x => x.RoleName == "Manager"));
+            return(db.Roles.FirstOrDefault(x => x.RoleName == rolename));
         }
         void SaveRecords()
         {
